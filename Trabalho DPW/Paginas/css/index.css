@@ -1,0 +1,153 @@
+
+
+    /* Definições gerais */
+
+    body {background-color: rgb(10, 10, 10)}
+    
+    #banner{background-image: url(fundo.jpg); background-position: center; width: 100%; max-height: 150px;}
+
+    #rodape{color: whitesmoke}
+
+
+    ul {list-style: none;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;}
+    
+    li {display: inline;}
+    
+    li a{display: inline-block;
+        color: black;
+        text-decoration: none;
+        padding: 20px;
+        font-size: larger;}
+
+    li a:hover {color: rgb(146, 146, 146);}
+
+    
+    /* Main Botafogo */
+    
+    #imagemQueMuda{width:1000px; height:532px; display:block; margin-left: auto; margin-right: auto}
+
+    @media only screen and (max-width: 1000px) {#imagemQueMuda{width:750px; height:399px;}}
+    @media only screen and (max-width: 800px) {#imagemQueMuda{width:500px; height:266px;}}
+    @media only screen and (max-width: 500px) {#imagemQueMuda{width:375px; height:199.5px;}}
+    @media only screen and (max-width: 375px) {#imagemQueMuda{width:250px; height:133px;}}
+    @media only screen and (max-width: 800px) {li a{float: none; max-width: 100%; padding: 10px; font-size: large; display:block; margin-right: 39px;}}
+
+    
+    #tabela{display:flex;
+        margin-left: 25%;
+        margin-right: 25%;}
+
+    Table, th, td {border-collapse: collapse;
+            color: white;
+            text-align: left;
+            width: 400px;
+            height: 30px;
+            margin-right:250px;}
+    
+    tr#bot {background-color: rgb(187, 187, 187);}
+        
+    #tab{float:left}
+
+    
+    
+    #jogo{float:right; text-align: center;}
+    #botafogo{width:40%;}
+    #crystal{width:45%;}
+
+
+
+    #hino{text-align: center}
+    video {width: 30%;}
+
+    
+    /* Calendário */
+
+    .wraper{background-color: #a8a8a8;
+        max-width: 600px;
+        margin: 10px auto;
+        padding:10px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;}
+    
+    .diaSemana{width: 100%;
+        justify-content: space-around;
+        display: flex;
+        padding: 10px;
+        border-bottom: solid 1px;}
+    .mesAtual{font-size: x-large; 
+        text-align: center; 
+        margin-bottom: 5px; 
+        margin-left: 15px;
+        font-weight: bold;}
+
+    .diaMes{width: 100%;
+        display: flex;
+        flex-wrap: wrap;}
+    .diaMes span{display: inline-block;
+        width: 14.2%;
+        margin-top: 20px;
+        margin-bottom: 10px;}
+    
+    .hoje{background-color: aqua;}
+
+
+    /* História Botafogo */
+    
+    #historia{margin-top: 5%; margin-left: 15%; margin-right: 15%;
+              color:whitesmoke;}
+    #hist_txt{font-size: larger;}
+
+    
+    /* Curiosidades Botafogo */
+
+    #body_curiosidades{color:whitesmoke;}
+    
+    #curiosidades{margin-top: 5%; margin-left: 15%; margin-right: 15%;}
+    #curio_txt{font-size: larger;}
+
+    #javascript{margin-top: 5%; margin-left: 15%; margin-right: 15%; text-align: center;}
+
+    #carrousel{max-width: 1000px; position: relative; margin: auto;}
+    .slides{display: none;}
+    .prev, .prox{cursor: pointer; position: absolute; top: 50%; width: auto;  margin-top: -22px; 
+        padding: 16px; color: white; font-weight: bold; font-size: 18px; transition: 0.3s ease;  
+        border-radius: 0 3px 3px 0; user-select: none;}
+    .prox{right: 0; border-radius: 3px 0 0 3px;}
+    .prev{left: 0; border-radius: 3px 0 0 3px;}
+    .prev:hover, .prox:hover{background-color: rgba(0,0,0,0.8);}
+    .dot{cursor: pointer; background-color: #bbb; display: inline-block; transition: 0.3s ease; height: 15px; width: 15px; margin: 0 2px;}
+    .active, .dot:hover {background-color: #717171;}
+
+
+  
+
+
+    
+    /* Quiz Botafogo */
+    
+    #quiz_botafogo{margin-top: 5%; margin-left: 15%; margin-right: 15%;
+        color:whitesmoke; text-align:center;}
+    #quiz{font-size: larger;}
+
+    
+    /* Index Botafogo */
+
+    #indexbota{margin-top: 5%; margin-left: 15%; margin-right: 15%;
+        color:whitesmoke; text-align:center;}
+    #index{font-size: larger;}
+    #p_index:first-letter{font-size: xx-large;}
+    #cores_bota:hover{background-color: whitesmoke; color: black;}
+    #botafogo2{display:block; margin-left: auto; margin-right: auto; width: 10%;}
+
+
+
+
+
+    
+    

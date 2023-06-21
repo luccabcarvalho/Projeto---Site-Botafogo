@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+<title>Site Botafogo</title>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+<link type="text/css" rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body>
+    
+    <header>
+    
+    <p style="color:whitesmoke; text-align:center; font-size: 18px; font-style:oblique ;">Na vitoria ou na derrota sou Botafogo até o fim</p>
+    
+    <div class="section" id="banner">
+        <br><br><br><br><br><br><br>
+    </div>
+    
+    </header>
+
+    <nav>
+        
+        <ul>
+            <li><a href="../Main/BOTAFOGO.html" target="_self">Home</a></li>
+            <li><a href="../Historia/Historia_Botafogo.html" target="_self">Historia</a></li>
+            <li><a href="../Curiosidades/Curiosidades_Botafogo.html" target="_self">Curiosidades</a></li>
+            <li><a href="../Index/Index_Botafogo.html" target="_self">Index</a></li>
+            <li><a href="../Quiz_Torcedor/Quiz_Botafogo.html" target="_self">Quiz Torcedor</a></li>
+        </ul>
+
+
+    </nav>
+
+    <main id="principal">
+
+        <div class="section" id="inicio">
+        
+        <br>
+
+        <div>
+            <img id="imagemQueMuda" alt="Imagens Botafogo" src="./imagens/img1.jpg">
+        </div>
+
+        <script>
+        const elementoImagem = document.getElementById("imagemQueMuda");
+
+        console.log(localStorage.imageIndex);
+        if (localStorage.imageIndex == null || localStorage.imageIndex > 3)
+            localStorage.imageIndex = 1;
+
+
+        elementoImagem.setAttribute("src", `./imagens/img${localStorage.imageIndex}.jpg`);
+        localStorage.imageIndex++;
+
+
+        </script>
+
+        <br><br><br><br>
+        
+        </div>
+
+        <div class="article" id="tabela">
+
+        <div class="section" id="tab">
+
+        <table>
+            <caption style="text-align:left; font-size:larger;">Classificação <br><span style="color:rgb(60, 255, 0) ;">Campeonato Brasileiro 2022</span></caption>
+            <tr>
+                <th> </th>
+                <th>Time</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PAL</td>
+                <td>81</td>
+                <td>38</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>INT</td>
+                <td>73</td>
+                <td>38</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>FLU</td>
+                <td>70</td>
+                <td>38</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>COR</td>
+                <td>65</td>
+                <td>38</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>FLA</td>
+                <td>62</td>
+                <td>38</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>CAP</td>
+                <td>58</td>
+                <td>38</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CAM</td>
+                <td>58</td>
+                <td>38</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>FOR</td>
+                <td>55</td>
+                <td>38</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>SAO</td>
+                <td>54</td>
+                <td>38</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>AMN</td>
+                <td>53</td>
+                <td>38</td>
+                <td>15</td>
+            </tr>
+            <tr id="bot">
+                <td>11</td>
+                <td>BOT</td>
+                <td>53</td>
+                <td>38</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>SAN</td>
+                <td>47</td>
+                <td>38</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>GOI</td>
+                <td>46</td>
+                <td>38</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>BRA</td>
+                <td>44</td>
+                <td>38</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>COR</td>
+                <td>42</td>
+                <td>38</td>
+                <td>12</td>
+            </tr>
+
+        </table>
+
+        <br>
+        <p style="text-decoration: none; color:whitesmoke; font-size: large;">Acesse a tabela atualizada <a id="link" style="text-decoration: none; color:rgb(255, 255, 255); font-size: 105%;" href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank">AQUI</a>.</p>
+        
+        </div>
+
+        <section id="jogo">
+
+            <h2 style="font-size: larger; color: whitesmoke;">Próximo Jogo</h2>
+            <p style="font-size: large; color: whitesmoke;">Botafogo X Crystal Palace</p>
+            <img src="botafogologo.png" alt="Logo Botafogo" id="botafogo">
+            <img src="crystal_palace.png" alt="Logo Crystal Place" id="crystal">
+            <p style="font-size: large; color: whitesmoke;">Sab, 03/12, 09:30</p>
+
+
+        </section>
+
+        </div>
+
+
+        <br><br>
+        <article id="hino">
+
+                <h2 style= "color: whitesmoke;">Hino Botafogo</h2>
+                <video controls>
+                <source src="Hino_Botafogo.mp4" type="video/mp4">
+                <source src="Hino-Botafogo.ogg" type="video/ogg">
+                </video>
+    
+        </article>
+
+        <br><br><br>
+
+        <h2 style="text-align: center; color: whitesmoke;">Calendário</h2>
+
+        <div class="wraper" id="calendario">
+
+            <div style="text-align: center;" class="mesAtual">
+            </div>
+            <div class="diaSemana">
+                <span>Segunda</span>
+                <span>Terça</span>
+                <span>Quarta</span>
+                <span>Quinta</span>
+                <span>Sexta</span>
+                <span>Sábado</span>
+                <span>Domingo</span>
+            </div>
+                
+            <div class="diaMes">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="rodape">
+
+        <hr>
+        <p style="text-align:center ">© Copyright 2022 por Lucca Braga Carvalho e Daniel Camelo</p>
+        <p style="text-align:center ">UNIVERSIDADE FEDERAL DO ESTADO DO RIO DE JANEIRO</p>
+
+    </footer>
+
+    <script>
+        const d = new Date();
+        let dia = d.getDate();
+
+        const m = new Date();
+        let mes = m.getMonth();
+
+
+        let dias = document.querySelector('.diaMes');
+        let meses = document.querySelector('.mesAtual');
+        
+
+        if (mes == 0) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Janeiro";
+        }
+        else if (mes == 1) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Fevereiro";
+        }
+        else if (mes == 2) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Março";
+        }
+        else if (mes == 3) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Abril";
+        }
+        else if (mes == 4) {
+            meses.innerHTML = "Maio";
+        }
+        else if (mes == 5) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Junho";
+        }
+        else if (mes == 6) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Julho";
+        }
+        else if (mes == 7) {
+            dias.innerHTML = '<span>' + '</span>';
+            meses.innerHTML = "Agosto";
+        }
+        else if (mes == 8) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Setembro";
+        }
+        else if (mes == 9) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Outubro";
+        }
+        else if (mes == 10) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Novembro";
+        }
+        else if (mes == 11) {
+            dias.innerHTML = '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>' + '<span>' + '</span>';
+            meses.innerHTML = "Dezembro";
+        }
+
+
+        for(i = 1; i <= 31; i++) {
+            if (i == dia) {
+                dias.innerHTML += '<span class="hoje">' + i + '</span>';
+            }
+            else{
+                dias.innerHTML += '<span>' + i + '</span>'; 
+            }
+        }
+
+
+        
+
+
+
+
+    </script>
+</body>
